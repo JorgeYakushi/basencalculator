@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <link rel="stylesheet" href="style.css">
   <title>n base calculator</title>
   <script src="calculation.js"></script>
 
@@ -10,22 +10,31 @@
 </head>
 
 <body>
-    <h2>Convert any base-n number to a base-m number:</h2>
-    <input type = "text"
-    id = "inputText"
-    value = "insert number to convert" />
-    <input type = "text"
-    id = "outputText"
-    value = "" />
-    <br>
-    <input type = "number"
-    id = "inputBaseText"
-    value = 10 />
-    <input type = "number"
-    id = "outputBaseText"
-    value = 2 />
-    <br>
+  <div class="container">
+    <h2 id="Indicaciones">Convert any base-n number to a base-m number:</h2>
+    <div class="twoMembers">
+      <div class="label1">input number:</div>
+      <div class="label2">result:</div>
+    </div>
+    <div class="twoMembers">
+      <input type = "text"
+      id = "inputText"
+      value = "insert number to convert" />
+      <input type = "text"
+      id = "outputText"
+      value = "" />
+    </div>
+    <div class="twoMembers">
+      <input type = "number"
+      id = "inputBaseText"
+      value = 10 />
+      <input type = "number"
+      id = "outputBaseText"
+      value = 2 />
+    </div>
+    <div class="twoMembers">
     <button onclick="convertBase()">Convert</button>
-    <button onclick="swapBases()">Swap Bases</button>
+    <button onclick="swapBases()">Swap Bases</button></div>
+  </div>
 </body>
 </html>
