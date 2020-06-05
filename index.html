@@ -11,30 +11,42 @@
 
 <body>
   <div class="container">
-    <h2 id="Indicaciones">Convert any base-n number to a base-m number:</h2>
-    <div class="twoMembers">
-      <div class="label1">input number:</div>
-      <div class="label2">result:</div>
-    </div>
-    <div class="twoMembers">
+    <div class="a1"><strong>Convert any base-n number to a base-m number:</strong></div>
+    <div class="a3">Input Number:</div>
+    <div class="a4">Result:</div>
+    <div class="a5">
       <input type = "text"
       id = "inputText"
       value = "insert number to convert" />
+    </div>
+    <div class="a6">
       <input type = "text"
       id = "outputText"
-      value = "" />
+      value = ""
+      readonly />
     </div>
-    <div class="twoMembers">
+    <div class="a7">Select Input Base:</div>
+    <div class="a8">Select Result Base:</div>
+    <div class="a9">
       <input type = "number"
+      class="inputBox"
       id = "inputBaseText"
       value = 10 />
+    </div>
+    <div class="a10">
       <input type = "number"
+      class="inputBox"
       id = "outputBaseText"
       value = 2 />
     </div>
-    <div class="twoMembers">
-    <button onclick="convertBase()">Convert</button>
-    <button onclick="swapBases()">Swap Bases</button></div>
+    <div class="a11">
+      <button onclick="swapBases()">Swap Bases</button>
+    </div>
+    <div class="a12">
+      <button onclick="convertBase()">Convert</button>
+    </div>
+    
   </div>
+
 </body>
 </html>
